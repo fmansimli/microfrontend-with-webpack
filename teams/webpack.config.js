@@ -14,8 +14,9 @@ module.exports = {
       name: "teams",
       filename: "remoteEntry.js",
       exposes: {
-        "./TeamsIndex": "./src/index.js",
+        "./TeamsIndex": "./src/bootstrap.js",
       },
+      shared: ["axios"],
     }),
   ],
 };

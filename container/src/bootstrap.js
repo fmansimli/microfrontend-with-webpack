@@ -1,5 +1,5 @@
-import "teams/TeamsIndex";
-import "projects/ProjectsIndex";
+import { mount as mountTeams } from "teams/TeamsIndex";
+import { mount as mountProjects } from "projects/ProjectsIndex";
 
 const links = [
   { name: "Home", src: "/" },
@@ -18,3 +18,6 @@ for (const link of links) {
 }
 
 document.querySelector(".app-menu").innerHTML = template;
+
+mountTeams(document.querySelector("#app-teams"));
+mountProjects(document.querySelector("#app-projects"));

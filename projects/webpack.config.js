@@ -14,7 +14,10 @@ module.exports = {
       name: "projects",
       filename: "remoteEntry.js",
       exposes: {
-        "./ProjectsIndex": "./src/index",
+        "./ProjectsIndex": "./src/bootstrap.js",
+      },
+      shared: {
+        axios: { singleton: true },
       },
     }),
   ],
