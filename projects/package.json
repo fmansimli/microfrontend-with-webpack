@@ -1,0 +1,25 @@
+{
+  "name": "projects",
+  "version": "1.0.0",
+  "description": "projects part of the micro-frontend",
+  "main": "index.js",
+  "engines": {
+    "node": "18.12.1"
+  },
+  "scripts": {
+    "start": "webpack serve"
+  },
+  "keywords": [
+    "webpack",
+    "micro-frontend",
+    "projects"
+  ],
+  "author": "Farid Mansimli",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
